@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body> 
+    <div class="component"> 
+      <header class="component__header"> 
+        <div class="header">
+          <div class="header__notifications">
+            <p class="header__title">Notifications</p><span class="header__count">3</span>
+          </div>
+          <p class="header__mark">Mark all as read</p>
+        </div>
+      </header>
+      <main class="component__card"> 
+        <div class="card card_unread"><img class="card__image" src="./images/avatar-mark-webber.webp" alt="mark-webber">
+          <div class="card__description">
+            <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Mark Webber </a>reacted to your recent post <a class="card__link" href="#" aria-label="show publication">My first tournament today!</a><span class="card__icon material-symbols-outlined">circle</span></p>
+            <p class="card__subtitle">1m ago</p>
+          </div>
+        </div>
+        <div class="card card_unread">
+          <div class="card__content"> <img class="card__image" src="./images/avatar-angela-gray.webp" alt="angela-gray">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Angela Gray </a>followed you<span class="card__icon material-symbols-outlined">circle</span></p>
+              <p class="card__subtitle">5m ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card_unread"> 
+          <div class="card__content"> <img class="card__image" src="./images/avatar-jacob-thompson.webp" alt="jacob-thompson">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Jacob Thompson </a>has joined your group <a class="card__link_group" href="#" aria-label="show group">Chess Club </a><span class="card__icon material-symbols-outlined">circle</span></p>
+              <p class="card__subtitle">1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content"> <img class="card__image" src="./images/avatar-rizky-hasanuddin.webp" alt="rizky-hasanuddin">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Rizky Hasanuddin </a>sent you a private message</p>
+              <p class="card__subtitle">5 days ago</p>
+              <p class="card__message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card_photo-section">
+          <div class="card__content"><img class="card__image" src="./images/avatar-kimberly-smith.webp" alt="kimberly-smith">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Kimberly Smith </a>commented on your picture</p>
+              <p class="card__subtitle">1 week ago </p>
+            </div>
+          </div><img class="card__picture" src="./images/image-chess.webp" alt="chess">
+        </div>
+        <div class="card">
+          <div class="card__content"> <img class="card__image" src="./images/avatar-nathan-peterson.webp" alt="nathan-peterson">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Nathan Peterson </a>reacted to your recent post <a class="card__link" href="#" aria-label="show publication">5 end-game strategies to increase your win rate</a></p>
+              <p class="card__subtitle">2 weeks ago </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content"> <img class="card__image" src="./images/avatar-anna-kim.webp" alt="anna-kim">
+            <div class="card__description">
+              <p class="card__title"> <a class="card__name" href="#" aria-label="show profile">Anna Kim </a>left the group <a class="card__link_group" href="#" aria-label="show group">Chess Club</a>
+                <p class="card__subtitle">2 weeks ago </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

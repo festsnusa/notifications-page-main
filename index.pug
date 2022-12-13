@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Notifications Page
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0")
+    link(rel="stylesheet", href="./style.css")
+  body 
+    .component 
+      header.component__header 
+        .header
+          .header__notifications
+            p.header__title Notifications
+            span.header__count 3
+          p.header__mark Mark all as read
+      main.component__card 
+        .card.card_unread
+          img.card__image(src="./images/avatar-mark-webber.webp", alt="mark-webber")
+          .card__description
+            p.card__title 
+              a.card__name(href="#" aria-label="show profile") Mark Webber 
+              | reacted to your recent post 
+              a.card__link(href="#" aria-label="show publication") My first tournament today!
+              span.card__icon.material-symbols-outlined circle
+            p.card__subtitle 1m ago
+        .card.card_unread
+          .card__content 
+            img.card__image(src="./images/avatar-angela-gray.webp", alt="angela-gray")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Angela Gray 
+                | followed you
+                span.card__icon.material-symbols-outlined circle
+              p.card__subtitle 5m ago
+        .card.card_unread 
+          .card__content 
+            img.card__image(src="./images/avatar-jacob-thompson.webp", alt="jacob-thompson")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Jacob Thompson 
+                | has joined your group 
+                a.card__link_group(href="#" aria-label="show group") Chess Club 
+                span.card__icon.material-symbols-outlined circle
+              p.card__subtitle 1 day ago
+        .card
+          .card__content 
+            img.card__image(src="./images/avatar-rizky-hasanuddin.webp", alt="rizky-hasanuddin")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Rizky Hasanuddin 
+                | sent you a private message
+              p.card__subtitle 5 days ago
+              p.card__message Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+        .card.card_photo-section
+          .card__content
+            img.card__image(src="./images/avatar-kimberly-smith.webp", alt="kimberly-smith")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Kimberly Smith 
+                | commented on your picture
+              p.card__subtitle 1 week ago 
+          img.card__picture(src="./images/image-chess.webp", alt="chess")
+        .card
+          .card__content 
+            img.card__image(src="./images/avatar-nathan-peterson.webp", alt="nathan-peterson")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Nathan Peterson 
+                | reacted to your recent post 
+                a.card__link(href="#" aria-label="show publication") 5 end-game strategies to increase your win rate
+              p.card__subtitle 2 weeks ago 
+        .card
+          .card__content 
+            img.card__image(src="./images/avatar-anna-kim.webp", alt="anna-kim")
+            .card__description
+              p.card__title 
+                a.card__name(href="#" aria-label="show profile") Anna Kim 
+                | left the group 
+                a.card__link_group(href="#" aria-label="show group") Chess Club
+                p.card__subtitle 2 weeks ago 
+
+    script(src="./app.js")
